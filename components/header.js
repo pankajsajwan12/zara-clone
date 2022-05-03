@@ -25,7 +25,9 @@ function navbar(){
   </div>
   <div class="SideBar-listItem">
     <ul>
-      <li><a href="men.html">BEST SELLERSNEW</a></li>
+      <li><a href="men.html">NEW</a></li>
+      <li><a href="men.html">ISLAND LIFE</a></li>
+      <li><a href="men.html">BEST SELLERS NEW</a></li>
       <li> <a href="men.html">BLAZERS</a></li>
       <li><a href="men.html">DRESSES | JUMPSUITS</a></li>
       <li><a href="men.html">SHIRTS</a></li>
