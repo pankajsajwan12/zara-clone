@@ -1,0 +1,78 @@
+#main_footer{
+    width: 100%;
+}
+#footer_main{
+    width: 100%;
+    margin-left: 10%;
+    text-transform: uppercase;
+}
+#footer_main h3{
+    font-size: 12px;
+    padding: 25px 0px;
+}
+#footer_main h3+div input{
+    width: 100%;
+    border: 0px;
+    border-radius: 0px;
+}
+#footer_main h3+div {
+    width: 15%;
+   border-bottom: 1px solid black;
+}
+#footer-ul{
+    width: 100%;
+    height: 350px;
+}
+#footer-ul ul{
+    display: flex;
+    font-size: 10px;
+    padding: 25px 0px;
+}
+#footer-ul ul li:first-child{
+    margin-left: 0px;
+}
+#footer-ul ul li{
+    margin-left: 18px;
+}
+#women_footer{
+    width: 100%;
+    display: flex;
+    height: 400px;
+    /* justify-content: space-evenly; */
+    margin-left: 10%;
+    font-size: 13px;
+}
+#women_footer div:first-child{
+    width: 15%;
+}
+#women_footer div{
+    width: 9%;
+}
+#women_footer div p{
+    font-size: 10px;
+}
+#women_footer div h4+P{
+    margin-top: 10px;
+    /* border: 1px solid red; */
+}
+#women_footer div P{
+    padding-top: 5px;
+    /* border: 1px solid red; */
+}
+#India{
+    width: 100%;
+    margin-left: 10%;
+}
+#english{
+    font-size: 12px;
+    height: 150px;
+    padding: 20px 0px;
+    width: 90%;
+    display: flex;
+   justify-content: space-between;
+}
+#footer-content{
+    width: 100%;
+    margin-left: 10%;
+    font-size: xx-small;
+}

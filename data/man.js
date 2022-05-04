@@ -92,10 +92,9 @@ tie.push(tie1,tie2,tie3,tie4);
 
 //7.
 let bag = [];
-
 let bag1 = new newManData('https://static.zara.net/photos///2022/V/1/1/p/3143/920/500/32/w/590/3143920500_1_1_1.jpg?ts=1650879773571','LEATHER CROSSBODY MAXI BAG','14990.00');
 
-let bag2 = new newManData('https://static.zara.net/photos///2022/V/1/1/p/3143/920/500/33/w/437/3143920500_2_1_1.jpg?ts=1650885927158','LEATHER CROSSBODY MAXI BAG',' 14990.00');
+let bag2 = new newManData('https://static.zara.net/photos///2022/V/1/1/p/3143/920/500/33/w/437/3143920500_2_1_1.jpg?ts=1650885927158','LEATHER CROSSBODY MAXI BAG',' 14990.00')
 let bag_2 = new newManData("https://static.zara.net/photos///contents/cm/media-transformations/joinlife-ctx/joinlife-large.svg?ts=1611919362013",'LEATHER CROSSBODY MAXI BAG','14990.00');
 
 let bag3 = new newManData("https://static.zara.net/photos///2022/V/1/1/p/3904/920/002/32/w/590/3904920002_1_1_1.jpg?ts=1650886210615",'EMBOSSED MOBILE PHONE CARRYING CASE','1590.00');
