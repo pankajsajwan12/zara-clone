@@ -1,3 +1,8 @@
+import {navbar} from '../components/header.js'
+import {footer} from '../components/footer.js'
+document.getElementById('header').innerHTML=navbar();
+document.getElementById('footer').innerHTML=footer();
+
 document.querySelector("form").addEventListener("submit",Loginfun)
     
 var login=JSON.parse(localStorage.getItem("userData"))
@@ -28,3 +33,10 @@ document.getElementById('btn').addEventListener('click',()=>{
     //   createAccount();
     window.location.href="createAccount.html"
 })
+
+document.getElementById('humburger').addEventListener('click',()=>{
+    openNav();
+  });
+  document.getElementById('closebtn').addEventListener('click',()=>{
+    closeNav();
+  });

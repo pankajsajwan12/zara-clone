@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://kit.fontawesome.com/985c64737c.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/fotter.css">
+    <style>
+        #cartItem{
+            display: grid;
+            grid-template-columns: repeat(3,31%);
+            margin-left: 14%;
+            gap: 20px;
+        }
+        #cart-main{
+            padding-top: 14%;
+            text-align: center;
+        }
+        #cart ,#cartName{
+            display: flex;
+            margin-left: 9%;
+        }
+        #cart div{
+            margin-left: 30px;
+        }
+        #cartAppendDiv{
+            margin-top: 50px;
+            display: flex;
+        }
+        #leftDiv{
+            margin-left: 7px;
+            font-size: 11px;
+        }
+        #btnDiv{
+            display: flex;
+        }
+        #btnDiv button{
+            width: 40px;
+            border: none;
+            background-color: #ffff;
+        }
+        #btnNum{
+            width: 15px;
+        }
+        #leftDiv p{
+            padding-top: 15px;
+        }
+        #cartImg{
+            width: 300px;
+            height: 500px;
+        }
+        #price{
+            margin-top: 60px;
+        }
+        #deletBtn{
+            margin-top: 190%;
+        }
+        #totalPriceDiv{
+            /* position: relative; */
+            width: 100%;
+            height: 45px;
+            /* border: 1px solid red; */
+        }
+        #first{
+            position: fixed;
+            top: 650px;
+            height: 60px;
+            right: 30px;
+            width: 100%;
+            /* background-color: olive; */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            right: 5px;
+        }
+        #totalPrice{
+            /* color: white; */
+            width: 150px;
+            padding-right: 20px;
+        }
+        #continue-btn{
+            right: 30px;
+            width: 180px;
+          padding-right: 190px;
+        }
+        #continue{
+            width: 190px;
+            height: 35px;
+            color: #ffff;
+            border: none;
+            background-color: black;
+        }
+        #totalPriceh3{
+            font-size: 13px;
+        }
+       .h5{
+            font-size: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="cart-main">
+        <div id="cart">
+            <div id="cartName"> 
+                <h3>CART</h3>
+                <h3 id="TotalInCart">0</h3>
+            </div>
+            <div>
+                <h3 class="wishlist">WISHLIST</h3>
+            </div>
+        </div>
+            <div>
+                <div id="cartItem"></div>
+            </div>
+    </div>
+    <div id="totalPriceDiv">
+        <div id="first">
+            <div id="totalPrice">
+                <h5 id="totalPriceh3"></h5>
+                <h5 class="h5">Including GST* <br>excl Shipping cost</h5>
+            </div>
+            <div id="Continue-btn">
+                <button id="continue">CONTINUE</button>
+            </div>
+        </div>
+    </div>
+     <div id="footer"></div>   
+</body>
+</html>
+<script src="./scritps/cart.js" type="module"></script>

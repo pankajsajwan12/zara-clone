@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account /zara.in</title>
+    <link rel="stylesheet" href="./style/login.css">
+    <style>
+        #Create_Account{
+            width: 100%;
+            display: flex;
+        }
+        #Create_Account div{
+            width: 500px;
+        }
+        #Create_Account div div input{
+            width: 80%;
+            /* border: 1px solid red; */
+        }
+        #Create_Account div div {
+           font-size: 13px;
+        }
+        .accountPin{
+            border: none;
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h2 class="personal_details">PERSONAL DETAILS</h2>
+    <div id="check" id="check_personal_deatials"> 
+     <input type="checkbox" class="pch" >
+     <p class="p">PERSONAL</p>
+     <input type="checkbox" class="cch" >
+     <p class="c">COMPANY</p>
+ </div>
+     </div>
+    <form id="Create_Account">
+        <div id="Create_Account-left">
+            <div>
+                Name<br>
+                <input type="text"id="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <h5>Address</h5>
+                <input type="text" id="address" placeholder="Enter your address" required>
+            </div>
+            <div>
+                <h5>LOCALITY</h3>
+                <input type="text" id="locality" required>
+            </div>
+            <div>
+                <h5>State</h5>
+                <input type="text" id="state" required>
+            </div>
+            <div> 
+                <h5>E-Mail</h5>
+                <input type="text" id="email" required>
+            </div>
+        </div>
+        <div id="Create_Account-right">
+            <div>
+                <h5>PINCODE</h5>
+                <input type="text" id="pincode" class="accountPin" required>
+            </div>
+            <div>
+                <h5>MORE INFO</h5>
+                <input type="text" id="info" class="accountPin" required>
+            </div>
+            <div>
+                <h5>CITY</h5>
+                <input type="text" id="city" class="accountPin" required> 
+            </div>
+            <div>
+                <h5>REGION</h5>
+                <input type="text" id="region" class="accountPin" required>
+            </div>
+            <div>
+                <h5>PHONE NUMBER</h5>
+                <input type="text" id="number" class="accountPin" required>
+            </div>
+        </div>
+ </form>
+</body>
+</html>
+<script src="./scritps/createAccount.js"></script>

@@ -27,7 +27,16 @@ const one = (data,container)=>{
 
       div.append(div1,div2)
       container.append(div);
+      div.addEventListener('click',()=>{
+        addTolocal(element);
+      })
   });
+}
+let arr=JSON.parse(localStorage.getItem('DetailsData'))||[];
+const addTolocal = (el)=>{
+ arr.push(el);
+ localStorage.setItem('DetailsData',JSON.stringify(arr));
+ window.location.href="DetailsPage.html"
 }
 
 export {one};

@@ -3,6 +3,7 @@ document.getElementById('header').innerHTML=navbar();
 
 import {one} from "../components/one.js";
 console.log(one);
+
 //object
 function newManData (i,n,p){
     this.image=i;
@@ -181,10 +182,18 @@ one(data_18,image18);
 
 // Main Womens Data
 let WomensData = [];
-WomensData.push(data1,data_2,data_3,data_4,data_5,data_6,data7,data8,data9,data10,data11,data12,data13,data14,data15_left,data15_top,data15_bottom,data_19,data_16,data_17,data_18)
+WomensData.push(data1,data_2,data_3,data_4,data_5,data_6,data7,data8,data9,data10,data11,data12,data13,data14,data15,data_19,data_16,data_17,data_18)
 
 localStorage.setItem("WomensData",JSON.stringify(WomensData));
 
 
-import { footer } from "../components/footer.js";
+import {footer} from "../components/footer.js";
 document.getElementById('footer').innerHTML=footer();
+
+
+document.getElementById('humburger').addEventListener('click',()=>{
+    openNav();
+  });
+  document.getElementById('closebtn').addEventListener('click',()=>{
+    closeNav();
+  });

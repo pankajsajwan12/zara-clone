@@ -13,47 +13,47 @@ function navbar(){
         <div id="NavbarSearch">SEARCH</div>
         <div><a href="login.html">LOGIN</a></div>
         <div>HELP</div>
-        <div><i class="fa-solid fa-bag-shopping"></i></div>
+        <div><a href="bag.html"><i class="fa-solid fa-bag-shopping"></i></a></div>
     </div>
 </div>
   <div id="sideBar" class="sideBArNav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" id="closebtn">&times;</a>
     <div id="SideBar-hearder">
     <div> <a id="women" href="women.html">WOMAN</a></div>
-    <div><a id="man" href="men.html">MAN</a></div>
+    <div><a id="man" href="man.html">MAN</a></div>
     <div><a id="kid" href="kid.html">Kid</a></div>    
   </div>
   <div class="SideBar-listItem">
     <ul>
-      <li><a href="men.html">NEW</a></li>
-      <li><a href="men.html">ISLAND LIFE</a></li>
-      <li><a href="men.html">BEST SELLERS NEW</a></li>
-      <li> <a href="men.html">BLAZERS</a></li>
-      <li><a href="men.html">DRESSES | JUMPSUITS</a></li>
-      <li><a href="men.html">SHIRTS</a></li>
-      <li><a href="men.html">TROUSERS</a></li>
-      <li><a href="men.html">TOPS | CORSETS</a></li>
-      <li><a href="men.html">BODYSUITS</a></li>
-      <li><a href="men.html">T-SHIRTS</a></li>
-      <li> <a href="men.html">JEANS</a></li>
-      <li> <a href="men.html">SKIRTS</a></li>
-      <li><a href="men.html">SHORTS | SKORTS</a></li>
-      <li> <a href="men.html">CO-ORD SETS</a></li>
-      <li><a href="women.html">SUITS</a></li>
-      <li><a href="women.html">BASICSNEW</a></li>
-      <li><a href="women.html">KNITWEAR</a></li>
-      <li> <a href="women.html">SWEATSHIRTS</a></li>
-      <li><a href="women.html">COATS | TRENCH COATS</a></li>
-      <li><a href="women.html">JACKETS | OVERSHIRTS</a></li>
-      <li><a href="women.html">SHOES</a></li>
-      <li><a href="women.html">BAGS</a></li>
-      <li><a href="women.html">SWIMWEARNEW</a></li>
-      <li> <a href="women.html">ACCESSORIES</a></li>
-      <li> <a href="women.html">PERFUMES</a></li>
-      <li><a href="women.html">SPRING BREEZE</a></li>
-      <li><a href="women.html">SPECIAL PRICES</a></li>
-      <li><a href="women.html">SPECIAL EDITION</a></li>
-      <li><a href="women.html">JOIN LIFE</a></li>
+      <li><a href="man.html">NEW</a></li>
+      <li><a href="man.html">ISLAND LIFE</a></li>
+      <li><a href="man.html">BEST SELLERS NEW</a></li>
+      <li> BLAZERS</li>
+      <li>DRESSES | JUMPSUITS</li>
+      <li>SHIRTS</li>
+      <li>TROUSERS</li>
+      <li>TOPS | CORSETS</li>
+      <li>BODYSUITS</li>
+      <li>T-SHIRTS</li>
+      <li> JEANS</li>
+      <li> SKIRTS</li>
+      <li>SHORTS | SKORTS</li>
+      <li> CO-ORD SETS</li>
+      <li>SUITS</li>
+      <li>BASICSNEW</li>
+      <li>KNITWEAR</li>
+      <li> SWEATSHIRTS</li>
+      <li>COATS | TRENCH COATS</li>
+      <li>JACKETS | OVERSHIRTS</li>
+      <li>SHOES</li>
+      <li>BAGS</li>
+      <li>SWIMWEARNEW</li>
+      <li> ACCESSORIES</li>
+      <li> PERFUMES</li>
+      <li>SPRING BREEZE</li>
+      <li>SPECIAL PRICES</li>
+      <li>SPECIAL EDITION</li>
+      <li>JOIN LIFE</li>
   </ul>
   </div>   
 </div>

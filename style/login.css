@@ -1,7 +1,7 @@
 #loginPage{
     display: flex;
     justify-content: space-around;
-    margin-top: 10%;
+    padding-top: 15%;
   color:black; 
 }
 #loginForm input{
@@ -85,3 +85,7 @@ text-align: center;
     border: none;
     border-bottom:1px solid black;
   }
+
+#footer{
+    margin-top: 14%;
+}

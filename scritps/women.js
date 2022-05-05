@@ -197,3 +197,19 @@ localStorage.setItem("WomensData",JSON.stringify(WomensData));
 
 import { footer } from "../components/footer.js";
 document.getElementById('footer').innerHTML=footer();
+
+document.getElementById('humburger').addEventListener('click',()=>{
+    openNav();
+  });
+  document.getElementById('closebtn').addEventListener('click',()=>{
+    closeNav();
+  });
+
+  function openNav() {
+    document.getElementById("sideBar").style.display="block"
+    document.getElementById("sideBar").style.width = "250px";
+   }
+   
+   function closeNav() {
+    document.getElementById("sideBar").style.display = "none";
+  }

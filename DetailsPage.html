@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/fotter.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <script src="https://kit.fontawesome.com/985c64737c.js" crossorigin="anonymous"></script>
+    <style>
+        #details_content{
+            display: flex;
+            padding-top: 10%;
+            font-size: 13px;
+            margin-left: 10%;
+            margin-bottom: 8%;
+        }
+        #details_content div{
+            margin-left: 7%;
+        }
+        #DetailsData div img{
+            width: 350px;
+            height: 600px;
+        }
+        #detailsPara_left{
+            width: 280px;
+            padding-top: 12%;
+        }
+        .p{
+            margin-top: 20px;
+            font-size: 11px;
+            line-height: 15px;
+        }
+        .h3{
+            font-size: 10px;
+            margin: 17px 0px;
+
+        }
+        #detailsPara_right{
+            width: 300px;
+        }
+        .size{
+            padding: 7px 5px;
+        }
+        #classP{
+            display: flex;
+            justify-content: space-between;
+        }
+        .classP-p{
+            /* margin-right: -10px; */
+            padding-right: -10px;
+          font-size: 10px;
+        }
+        #add_btn{
+            margin: 30px 10px;
+            width: 90%;
+            height: 30px;
+            background-color: black;
+            color: #ffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <!-- <div id="DetailsData"></div> -->
+    <div id="details_content">
+        <div id="detailsPara_left">
+            <h4 class="h3">MATERIALS, CARE AND ORIGIN</h4>
+            <h5>JOIN LIFE</h5>
+            <p class="p">Care for fiber: at least 25% recycled polyester & 25% ECOVERO™ Viscose.</p>
+            <p class="p">We use the Join Life label on clothing that is produced using technology and raw materials that help us to reduce the environmental impact of our products.</p>
+            <h4 class="h3">MATERIALS</h4>
+            <p>We work with monitoring </p>
+         <p class="p"><a href="#">View more</a></p>
+    </div>
+    <div id="DetailsData"></div>
+             <div id="detailsPara_right">
+            <h4 class="h3" id="clothesName"></h4>
+            <p class="p">Oversize blazer with a lapel collar and long sleeves. Front flap pockets and chest welt pocket. Contrast lining. Button fastening at the front.</p>
+            <p class="p">BLUE | 4364/400</p>
+            <p id="price">₹ 2,990.00</p>
+            <p class="p"> MRP incl. of all taxes</p>
+            <br>
+           <hr>
+           <p class="size">XS</p>
+           <p class="size">S</p>
+           <p class="size">M</p>
+           <p class="size">L</p>
+           <p class="size">XL</p>
+           <P class="size">XXL</P>
+           <hr>
+           <div id="classP">
+            <p class="classP-p">FIND YOUR SIZE</p>
+            <p class="classP-p">SIZE GUIDE</p>
+           </div>
+          
+           <button id="add_btn" >ADD TO BAG</button>
+           <p class="p">CHECK IN-STORE AVAILABILITY</p>
+           <p class="p">DELIVERY, EXCHANGES AND RETURNS</p>
+        </div>    
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="./scritps/DetailsPage.js" type="module"></script>

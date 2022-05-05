@@ -21,7 +21,7 @@
 }
 #img-nameAndPrice{
     display: flex;
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
     justify-content: space-between;
     font-size: 13px;
 }
@@ -29,7 +29,7 @@
 #DressName{
  /* margin-right: 90px; */
  /* margin-left: 40%; */
- border: 1px solid red;
+ /* border: 1px solid red; */
 }
 #DressPrice{
     /* flex: 1; */

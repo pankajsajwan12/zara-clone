@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/fotter.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="/style/totalfixed.css">
+    <style>
+        #processPaytm{
+            padding-top: 14%;
+            padding-left: 15%;
+            
+        }
+        #paytm-Options{
+            width: 80%;
+            display: grid;
+            margin-top: 11%;
+            gap: 15px;
+            grid-template-columns: repeat(6,150px);
+            justify-content: center;
+        }
+        #paytm-Options div{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        #paytm-Options div:hover{
+            border: 1px solid black;
+        }
+        #footer{
+            margin-top: 10%;
+        }
+        #optoins-paytm{
+            display: block;
+            width: 100%;
+            box-shadow: none;
+        }
+        #notify-content{
+            margin-top: 3%;
+            width: 67%;
+            border: 1px solid orange;
+            padding: 20px;
+            color: orange;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="processPaytm">
+        <div id="optoins-paytm">CHOOSE A PAYMENT METHOD</div>
+        <div id="notify-content">
+            <p>Please note that only cards that use 3D Secure are accepted. Contact your bank to activate it or for further instructions.</p>
+        </div>
+      
+        <div id="paytm-Options" >
+        <div >
+           <img src="https://static.zara.net/static/images/payment/payment/icon-payment-visa.svg" alt="visa"> 
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/icon-payment-mastercard.svg" alt="mastercard">
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/icon-payment-amex_2.svg" alt="americanExpress">
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/ru-pay.svg" alt="ru-pay">
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/net-banking.svg" alt="net-banking">
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/upi.svg" alt="unifiend-payment">
+        </div>
+        <div>
+            <img src="https://static.zara.net/static/images/payment/payment/co-djpen.svg" alt="cash-on-delivery">
+        </div>
+    </div>
+</div>
+    <div id="paytm-total"></div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+  import {navbar} from '../components/header.js'
+import {footer} from '../components/footer.js'
+import {totalfixed} from '../components/totalbtn.js'
+// console.log(totalfixed);
+document.getElementById('header').innerHTML=navbar();
+document.getElementById('footer').innerHTML=footer();  
+document.getElementById('paytm-total').innerHTML=totalfixed(); 
+const goToPaytm =()=>{
+    window.location.href="paytmdata.html"
+}
+
+document.getElementById('paytm-Options').addEventListener('click',()=>{
+    goToPaytm();
+})
+
+let cartData = JSON.parse(localStorage.getItem('BagData'));
+function showTotal(){
+    var total =  cartData.reduce(function(acc,elem){
+    return acc+(elem.price*elem.qunt);
+},0);
+
+document.getElementById("totalPriceh3").innerHTML="Total Price"+" "+" "+total;
+}
+showTotal();
+
+const goTocheck = ()=>{
+     window.location.href="createAccount.html"
+ }
+ document.getElementById('continue').addEventListener('click',()=>{
+    goTocheck();
+})
+</script>
