@@ -22,6 +22,7 @@ for(var i=0;i<login.length;i++){
 
   if(flag==true){
     alert("Login Successful!")
+    window.location.href="index.html"
 }
 else{
     alert("login Fail!")

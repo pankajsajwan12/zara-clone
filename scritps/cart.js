@@ -23,7 +23,7 @@ function openNav() {
 
   // show item in cart
   //cart
-  let cartData = JSON.parse(localStorage.getItem('BagData'))||[];
+  let cartData = JSON.parse(localStorage.getItem('BagData'));
   console.log(cartData.length);
   document.getElementById('TotalInCart').innerHTML=cartData.length;
 

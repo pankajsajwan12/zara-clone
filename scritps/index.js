@@ -49,3 +49,10 @@ function slideShow(){
   },1500)
 }
 slideShow();
+
+
+let nam = document.getElementById('headerName');
+let user = JSON.parse(localStorage.getItem('userData'));
+user.forEach((el)=>{
+   nam.innerHTML = el.nam
+})

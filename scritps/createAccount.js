@@ -29,7 +29,7 @@ signupArr.push(signupObj);
 console.log(signupArr)
 localStorage.setItem("userData",JSON.stringify(signupArr))
 alert("Creation Successful")
-window.location.href="index.html"
+window.location.href="login.html"
 var email=document.querySelector("#email").value="";
 var password=document.querySelector("#password").value="";
 var nam=document.querySelector("#name").value="";

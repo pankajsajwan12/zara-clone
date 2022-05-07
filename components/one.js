@@ -32,7 +32,7 @@ const one = (data,container)=>{
       })
   });
 }
-let arr=JSON.parse(localStorage.getItem('DetailsData'))||[];
+let arr=[];
 const addTolocal = (el)=>{
  arr.push(el);
  localStorage.setItem('DetailsData',JSON.stringify(arr));
