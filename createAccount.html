@@ -5,28 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account /zara.in</title>
+    <script src="https://kit.fontawesome.com/985c64737c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/login.css">
+    <style>
+        #company_Account{
+            width: 100%;
+            display: none;
+        }
+        #submitbtn{
+            width: 80%;
+            margin:30px  14%;
+            text-align: center;
+            height: 40px;
+            color: red;
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
     <div>
     <h2 class="personal_details">PERSONAL DETAILS</h2>
     <div id="check" id="check_personal_deatials"> 
      <input type="checkbox" class="pch" >
-     <p class="p">PERSONAL</p>
+     <button id="personal">PERSONAL</button>
      <input type="checkbox" class="cch" >
-     <p class="c">COMPANY</p>
+     <button id="company">COMPANY</button>
  </div>
      </div>
+     <div id="personal_Account">
     <form id="Create_Account">
-     <input type="text" id="email" placeholder="E-MAIL"> 
-     <input type="password" id="password" placeholder="PASSWORD">
-     <input type="text" id="name" placeholder="NAME">
-     <input type="text" id="address" placeholder="ADDRESS">
-     <input type="text" id="locality" placeholder="LOCALITY">
-     <input type="text" id="state" placeholder="STATE"> 
-     <input type="text" id="number" placeholder="PREFIX"> 
-    <input type="submit" id="submit" value="CREATE ACCOUNT">
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="text" id="email" placeholder="E-MAIL"> 
+        <input type="password" id="password" placeholder="PASSWORD">
+        <input type="text" id="no" part="Enter your phone number">
+        <input type="text" id="address" placeholder=" full address">
+
+        <input type="text" id="locality" placeholder="LOCALITY">
+        <input type="text" id="state" placeholder="Enter your state"> 
+        <input type="text" id="number" placeholder="PREFIX"> 
+        <button type="submit" id="submitbtn">CREATE ACCOUNT</button>
  </form>
+</div>
+ <div id="company_Account">
+ <form id="Create_Account">
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="text" id="email" placeholder="E-MAIL"> 
+    <input type="password" id="password" placeholder="PASSWORD">
+    <input type="text" id="time" placeholder="office time">
+    <input type="text" id="locality" placeholder="LOCALITY">
+    <input type="text" id="state" placeholder="Enter your state"> 
+    <input type="text" id="number" placeholder="PREFIX"> 
+    <input type="text" id="office" placeholder="Entery your office address">
+    <button type="submit" id="submitbtn">CREATE ACCOUNT</button>
+</form>
+</div>
 </body>
 </html>
 <script src="./scritps/createAccount.js"></script>

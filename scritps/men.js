@@ -184,7 +184,7 @@ one(data_18,image18);
 let WomensData = [];
 WomensData.push(data1,data_2,data_3,data_4,data_5,data_6,data7,data8,data9,data10,data11,data12,data13,data14,data15,data_19,data_16,data_17,data_18)
 
-localStorage.setItem("WomensData",JSON.stringify(WomensData));
+localStorage.setItem("mensData",JSON.stringify(WomensData));
 
 
 import {footer} from "../components/footer.js";

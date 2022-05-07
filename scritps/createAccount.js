@@ -1,7 +1,8 @@
 
-document.querySelector("#create_account").addEventListener("submit",signup)
+document.querySelector("#Create_Account").addEventListener("submit",signup)
 
 var signupArr = JSON.parse(localStorage.getItem("userData"))||[];
+
 function signup(){
     event.preventDefault();
 
@@ -36,3 +37,13 @@ var locality =document.querySelector("#locality").value="";
 var state = document.querySelector("#state").value="";
 var no = document.querySelector("#no").value="";
 }
+
+document.getElementById('company').addEventListener('click',()=>{
+    document.getElementById('company_Account').style.display="block";
+    document.getElementById('personal_Account').style.display="none"
+})
+
+document.getElementById('personal').addEventListener('click',()=>{
+    document.getElementById('company_Account').style.display="none";
+    document.getElementById('personal_Account').style.display="block"
+})

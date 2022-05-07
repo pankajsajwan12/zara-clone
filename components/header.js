@@ -12,8 +12,8 @@ function navbar(){
     <div id="navbarRight">
         <div id="NavbarSearch">SEARCH</div>
         <div><a href="login.html">LOGIN</a></div>
-        <div>HELP</div>
-        <div><a href="bag.html"><i class="fa-solid fa-bag-shopping"></i></a></div>
+        <div id="headerName">HELP</div>
+        <div ><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></div>
     </div>
 </div>
   <div id="sideBar" class="sideBArNav">

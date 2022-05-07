@@ -21,18 +21,18 @@ function openNav() {
     closeNav();
   });
 
+  // show item in cart
   //cart
-let cartData = JSON.parse(localStorage.getItem('BagData'));
-console.log(cartData);
+  let cartData = JSON.parse(localStorage.getItem('BagData'))||[];
+  console.log(cartData.length);
+  document.getElementById('TotalInCart').innerHTML=cartData.length;
 
 let refno = Math.floor(Math.random()*10000);
 
 let cart = document.getElementById('cartItem');
 
 const display = (data)=>{
- 
     cart.innerHTML=null;
-
     data.forEach((element,index) => {
     let div = document.createElement('div');
     div.id="cartAppendDiv"
@@ -53,8 +53,8 @@ const display = (data)=>{
     btnDiv.id="btnDiv"
 
    let leftbtn = document.createElement('button');
-   leftbtn.innerHTML="- ";
-   leftDiv.addEventListener('click',()=>{
+   leftbtn.innerHTML="-";
+   leftbtn.addEventListener('click',()=>{
        decreaseQunt(index);
    })
 
@@ -64,7 +64,7 @@ const display = (data)=>{
 
    let rightbtn = document.createElement('button');
    rightbtn.innerHTML="+";
-   rightDiv.addEventListener('click',()=>{
+   rightbtn.addEventListener('click',()=>{
        incraseQunt(index);
    })
    btnDiv.append(leftbtn,num,rightbtn);
@@ -108,23 +108,21 @@ document.getElementById("totalPriceh3").innerHTML="Total Price"+" "+" "+total;
 showTotal();
 
 
-  const decreaseQunt=(index)=>{ 
-      console.log(index);
-//       cartData[index].qunt++;
-//       console.log(cartData); 
-//     //   localStorage.setItem("BagData",JSON.stringify(cartData));
-//     //   // display(cartData);   
-//     //   window.location.reload();
-  }
+  const decreaseQunt=(index)=>{
+      cartData[index].qunt--;
+      console.log(cartData); 
+      localStorage.setItem("BagData",JSON.stringify(cartData));
+      display(cartData);   
+      window.location.reload();
+    }
 
  const incraseQunt =(index)=>{
-    console.log(index);
-    // cartData[index].qunt++;
-    // console.log(cartData); 
-    // localStorage.setItem("pankajData",JSON.stringify(cartData));
-    // // display(cartData);   
+    cartData[index].qunt++;
+    console.log(cartData); 
+    localStorage.setItem("pankajData",JSON.stringify(cartData));
+    display(cartData);   
     // window.location.reload();
-    // showTotal();
+    showTotal();
  }
 
  const delete_remove=(element,index)=>{

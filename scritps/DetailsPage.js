@@ -3,7 +3,9 @@ import {footer} from '../components/footer.js'
 
 document.getElementById('header').innerHTML=navbar();
 document.getElementById('footer').innerHTML=footer();
-let data = JSON.parse(localStorage.getItem('DetailsData'))
+
+let data = JSON.parse(localStorage.getItem('DetailsData'))||[];
+
 let DetailsData = document.getElementById('DetailsData')
 let clothes = document.getElementById('clothesName')
 let price = document.getElementById('price')
@@ -36,6 +38,7 @@ const one = (data)=>{
   one(data);
 
   
+  // let bagArr =JSON.parse(localStorage.getItem('BagData'))||[];
   let bagArr = [];
   const goToBag = (element)=>{
     element.qunt=1;

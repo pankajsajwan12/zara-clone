@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/985c64737c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/fotter.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <style>
+         #submitbtn{
+            width: 30%;
+            text-align: center;
+            height: 40px;
+            color: red;
+            background-color: black;
+        }
+        #paytminput{
+            padding-top: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-left:  10%;
+        }
+        #paytminput div:first-child input{
+          
+            width: 250px;
+        }
+        #paytminput div{
+            margin: 12px 0px;
+        }
+        .sh{
+            margin: 20px 0px;
+        }
+        #footer{
+            margin-top: 10%;
+        }
+        #userDiv{
+            display: flex;
+        }
+        #userDiv p{
+            padding-left: 10px;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="header"></div>
+    <div id="paytminput">
+        <div id="showuserData">
+       <h3 class="sh">Shipping Address</h3>
+       <div>Card Number :&nbsp;&nbsp;<input type="text" id="cardNum" placeholder="Entery your Creadit Card Number" required></div>
+       <div>Starting Date :&nbsp;&nbsp;<input type="text" id="data" placeholder="12/04" required></div>
+      <div>Exp. Date :&nbsp;&nbsp;<input type="text" id="end" placeholder="45/35" required></div> 
+      <div>Cvv :&nbsp;&nbsp;<input type="password" placeholder="Enter your cvv number" ></div>
+       <button type="submit" id="submitbtn" >confirm</button>
+    </div>
+    </div>
+    <div id="footer"></div>
 </body>
 </html>
+<script type="module">
+
+document.getElementById('submitbtn').addEventListener('click',()=>{
+    show();
+})
+let time = Math.random()*3000
+const show=()=>{
+   setTimeout(function(){
+       alert("Thanky for shopping")
+       window.location.href="index.html"
+   },time)
+}
+    let showDiv = document.getElementById('showuserData')
+   let usreData =JSON.parse(localStorage.getItem("userData"))||[];
+
+   usreData.forEach(element => {
+       let div = document.createElement('div');
+        div.id="userDiv"
+       let name = document.createElement('p');
+       name.innerHTML=element.nam;
+
+       let num = document.createElement('p');
+       num.innerHTML=element.no;
+
+       let add = document.createElement('p');
+       add.innerHTML=element.address;
+
+       let loc = document.createElement('p');
+       loc.innerHTML=element.locality;
+
+       let st = document.createElement('p');
+       st.innerHTML=element.state;
+
+       div.append(name,num,loc,st,add);
+
+       showDiv.append(div);
+   });
+
+   import {navbar} from "../components/header.js";
+document.getElementById('header').innerHTML=navbar();
+import { footer } from "../components/footer.js";
+document.getElementById('footer').innerHTML=footer();
+
+
+//data
+let name = document.getElementById('headerName');
+let user = JSON.parse(localStorage.getItem('userData'));
+user.forEach((el)=>{
+   name.innerHTML = el.nam
+})
+</script>

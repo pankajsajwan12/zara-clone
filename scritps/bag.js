@@ -4,7 +4,9 @@ import {footer} from '../components/footer.js'
 document.getElementById('header').innerHTML=navbar();
 document.getElementById('footer').innerHTML=footer();
 
-let cartArr= [];
+let cartArr= JSON.parse(localStorage.getItem('cartData'))||[];
+console.log(cartArr.length);
+
 let BagItem = JSON.parse(localStorage.getItem('BagData'));
 
 const BagData = (data)=>{
@@ -33,6 +35,7 @@ const BagData = (data)=>{
   
         div.append(div1)
         DetailsData.append(div,div2);
+
         div.addEventListener("click",function(){
             cartArr.push(element);
             localStorage.setItem("cartData",JSON.stringify(cartArr));
