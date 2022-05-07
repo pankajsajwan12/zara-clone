@@ -197,3 +197,9 @@ document.getElementById('humburger').addEventListener('click',()=>{
   document.getElementById('closebtn').addEventListener('click',()=>{
     closeNav();
   });
+
+  let nam = document.getElementById('headerName');
+let user = JSON.parse(localStorage.getItem('userData'));
+user.forEach((el)=>{
+   nam.innerHTML = el.nam
+})

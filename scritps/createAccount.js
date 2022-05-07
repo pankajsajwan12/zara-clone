@@ -29,6 +29,7 @@ signupArr.push(signupObj);
 console.log(signupArr)
 localStorage.setItem("userData",JSON.stringify(signupArr))
 alert("Creation Successful")
+window.location.href="index.html"
 var email=document.querySelector("#email").value="";
 var password=document.querySelector("#password").value="";
 var nam=document.querySelector("#name").value="";
@@ -46,4 +47,10 @@ document.getElementById('company').addEventListener('click',()=>{
 document.getElementById('personal').addEventListener('click',()=>{
     document.getElementById('company_Account').style.display="none";
     document.getElementById('personal_Account').style.display="block"
+})
+
+let nam = document.getElementById('headerName');
+let user = JSON.parse(localStorage.getItem('userData'));
+user.forEach((el)=>{
+   nam.innerHTML = el.nam
 })

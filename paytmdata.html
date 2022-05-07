@@ -47,7 +47,6 @@
 <body>
     <div id="header"></div>
     <div id="paytminput">
-        <div id="showuserData">
        <h3 class="sh">Shipping Address</h3>
        <div>Card Number :&nbsp;&nbsp;<input type="text" id="cardNum" placeholder="Entery your Creadit Card Number" required></div>
        <div>Starting Date :&nbsp;&nbsp;<input type="text" id="data" placeholder="12/04" required></div>
@@ -71,31 +70,31 @@ const show=()=>{
        window.location.href="index.html"
    },time)
 }
-    let showDiv = document.getElementById('showuserData')
-   let usreData =JSON.parse(localStorage.getItem("userData"))||[];
+//     let showDiv = document.getElementById('showuserData')
+//    let usreData =JSON.parse(localStorage.getItem("userData"))||[];
 
-   usreData.forEach(element => {
-       let div = document.createElement('div');
-        div.id="userDiv"
-       let name = document.createElement('p');
-       name.innerHTML=element.nam;
+//    usreData.forEach(element => {
+//        let div = document.createElement('div');
+//         div.id="userDiv"
+//        let name = document.createElement('p');
+//        name.innerHTML=element.nam;
 
-       let num = document.createElement('p');
-       num.innerHTML=element.no;
+//        let num = document.createElement('p');
+//        num.innerHTML=element.no;
 
-       let add = document.createElement('p');
-       add.innerHTML=element.address;
+//        let add = document.createElement('p');
+//        add.innerHTML=element.address;
 
-       let loc = document.createElement('p');
-       loc.innerHTML=element.locality;
+//        let loc = document.createElement('p');
+//        loc.innerHTML=element.locality;
 
-       let st = document.createElement('p');
-       st.innerHTML=element.state;
+//        let st = document.createElement('p');
+//        st.innerHTML=element.state;
 
-       div.append(name,num,loc,st,add);
+//        div.append(name,num,loc,st,add);
 
-       showDiv.append(div);
-   });
+//        showDiv.append(div);
+//    });
 
    import {navbar} from "../components/header.js";
 document.getElementById('header').innerHTML=navbar();

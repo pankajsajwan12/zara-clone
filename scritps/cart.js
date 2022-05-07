@@ -140,3 +140,10 @@ showTotal();
  document.getElementById('continue').addEventListener('click',()=>{
     goTocheck();
 })
+
+
+let nam = document.getElementById('headerName');
+let user = JSON.parse(localStorage.getItem('userData'));
+user.forEach((el)=>{
+   nam.innerHTML = el.nam
+})

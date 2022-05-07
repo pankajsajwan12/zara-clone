@@ -212,3 +212,10 @@ document.getElementById('humburger').addEventListener('click',()=>{
    function closeNav() {
     document.getElementById("sideBar").style.display = "none";
   }
+
+
+  let nam = document.getElementById('headerName');
+let user = JSON.parse(localStorage.getItem('userData'));
+user.forEach((el)=>{
+   nam.innerHTML = el.nam
+})
